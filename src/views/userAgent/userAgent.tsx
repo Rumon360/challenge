@@ -9,7 +9,6 @@ export const UserAgent = () => {
   return (
     <div>
       <BackToHome />
-
       {userAgent && (
         <div className="flex font-mono font-semibold text-sm">
           <div className="border p-2">UserAgent</div>
@@ -17,7 +16,6 @@ export const UserAgent = () => {
           <div className="border p-2">{userAgent}</div>
         </div>
       )}
-
       {!userAgent && <div>No user agent</div>}
     </div>
   );
